@@ -1,4 +1,5 @@
 /* CSS Style Sheet for Crazy Bob*/
 body{
     background-color: beige;
+    background-blend-mode: luminosity;
 }
