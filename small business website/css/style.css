@@ -60,3 +60,29 @@ nav ul li a:hover{
 .active{
     background-color:firebrick;
 }
+footer{
+    width:100%;
+    background:#000;
+    color:orange;
+    text-align:center;
+    padding:20px 0;
+}
+
+.keepOpen{
+    clear:both;
+}
+/* index.html */
+img#main_image{
+    width:400px;
+    display:block;
+    margin:15px;
+    border:5px outset brown;
+    float:left;    
+}
+#h2_main{
+    float:left;
+}
+
+#p_main{
+   float:left; 
+}
