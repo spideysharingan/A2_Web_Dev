@@ -44,6 +44,9 @@ nav {
     background-color:navajowhite;
     clear: both;
     margin:0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: px;
+    box-shadow: 3px 3px 3px black;
 } 
 nav ul{
     margin:0;
@@ -121,10 +124,35 @@ img#image_about{
     width:50%;
    font-family: 'Rubik', sans-serif;
 }
-*/
+
 #p_about{
    float:left; 
-    width:50%;
-   margin-top:10px;
+    width:53%;
+    margin-top:10px;
     font-family: 'Raleway Dots', cursive;
+}
+/*products*/
+div#gallery{
+    width:100%;
+    border:3px dotted green;
+}
+
+figure{
+    width:350px;
+    float:left;
+    background-color:#e2a80b
+}
+
+figure img{
+    display:block;
+    width:200px;
+    margin:15px auto;
+    box-shadow:2px 2px 10px #7c2020;
+    border:1px solid #ff0000;
+}
+figcaption{
+    text-align: center;
+    padding-bottom: 10px;
+    font-family:serif;
+    font-size:22px;
 }
