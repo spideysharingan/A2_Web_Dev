@@ -138,9 +138,11 @@ div#gallery{
 }
 
 figure{
+    
     width:350px;
     float:left;
-    background-color:#e2a80b
+    background-color:#e2a80b;
+   
 }
 
 figure img{
@@ -149,6 +151,9 @@ figure img{
     margin:15px auto;
     box-shadow:2px 2px 10px #7c2020;
     border:1px solid #ff0000;
+    height:200px;
+    width:300px;
+
 }
 figcaption{
     text-align: center;
