@@ -1,0 +1,18 @@
+/*style for Mr. Crandall's blog*/
+
+/*reset*/
+html,body,div,h1,h2,h3,h4,h5,p,ul,ol,li
+{
+    margin:0;
+    padding:0;
+}
+/* universal style*/
+body{
+    background-color:burlywood;
+}
+
+
+#container{
+    background-color: beige;
+    width:300px;
+}
