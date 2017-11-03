@@ -7,12 +7,41 @@ html,body,div,h1,h2,h3,h4,h5,p,ul,ol,li
     padding:0;
 }
 /* universal style*/
+
 body{
-    background-color:burlywood;
+    background-color: darkgrey;
+    
 }
-
-
-#container{
-    background-color: beige;
-    width:300px;
+div#container{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    width:100%;
+    background-color:#ffffff;
+}
+header#blogheader{
+    width:100%;
+    height:300px;
+    font-family:sans-serif;
+    text-align:center;
+    background-color: navajowhite;
+}
+/* blog post*/
+div#blogpost{
+display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    background-color: aliceblue;   
+    box-shadow: 3px 3px 3px black;
+    margin: 15px 0;
+    padding:10px;
+}
+div#postimg{
+    display: block;
+    width:150px;
+    height:150px;
+    background-color:aqua;
+    margin:5px;
+    
 }
