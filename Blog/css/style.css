@@ -84,7 +84,7 @@ p#posttext{
     font-size:1.2em;
     color: blue;
 }
-#video{
-    height:315px;
-    width:560px;
+#postvideo{
+    height:290px;
+    width:450px;
 }
