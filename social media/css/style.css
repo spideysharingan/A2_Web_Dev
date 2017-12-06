@@ -11,7 +11,7 @@ body{
 div#container{
    display:flex;
     flex-flow:column;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     background-color: #fff;
     max-width: 1024px;
@@ -30,18 +30,42 @@ header{
 
 header img#profile-img{
     display:block;
-    width: 200px;
-    height: 200px;
+    width:200px;
+    height:200px;
     align-self: flex-end;
     border-radius: 100%;
-        background-color: black;
-    
+    background-color: black;
+    margin-left:16px;
+}
+header    div#profile-info{
+    display: flex;
+    flex-direction:column;
+    align-self:flex-end;
+    flex-wrap:wrap;
+    margin-left:32px;
+}
+div#profile-info h2{
+    width: 100%;
+    order: 1;
+    font-size: 2.2em;
+}
+div#profile-info h4{
+    width: 100%;
+    order: 2;
+    font-size: 1.1em;
 }
 nav{
+    width:20%;
+    order:1;
     
 }
 div#content{
-    border: inset 4px #640000;
-        box-shadow:3px 2px 2px #064108;
-    
+    /*border: inset 4px #640000;
+        box-shadow:3px 2px 2px #064108;*/
+    order:2;
+    width:75%
+}
+footer{
+    order:3;
+    width:100%;
 }
