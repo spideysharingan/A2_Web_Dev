@@ -55,15 +55,59 @@ div#profile-info h4{
     font-size: 1.1em;
 }
 nav{
-    width:20%;
+    width:10%;
+    margin:10px 0 0 90px;
     order:1;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
     
+}
+nav li a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
 }
 div#content{
     /*border: inset 4px #640000;
         box-shadow:3px 2px 2px #064108;*/
     order:2;
-    width:75%
+    width:75%;
+    flex-wrap;
+}
+div#content div.post{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 85%;
+    height:auto;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px black;    
+}
+div#content div.post img.ppp{
+    display: block;
+    order: 1;
+    margin: 6px;
+    background-color: black;
+    width: 90px;
+    height: 90px;
+}
+div#content div.post h3.pnp{
+    order:2;
+    margin:6px;
+    height: 10%;
+    width:60%;
+}
+div#content div.post p.time-stamp{
+    order:3;
+}
+div#content div.post h5.p-comments{
+    order:4;
+}
+div#content div.post h5.p-likes{
+    order:5;
 }
 footer{
     order:3;
