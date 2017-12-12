@@ -80,12 +80,14 @@ div#content{
 div#content div.post{
     display: flex;
     flex-direction: row;
-    margin: auto;
+    justify-content: flex-start;
+    margin:8px auto;
     width: 85%;
     height:auto;
     background-color: #ffffff;
     box-shadow: 2px 2px 2px black;    
 }
+
 div#content div.post img.ppp{
     display: block;
     order: 1;
@@ -94,20 +96,38 @@ div#content div.post img.ppp{
     width: 90px;
     height: 90px;
 }
-div#content div.post h3.pnp{
+div#content div.post-info{
+   display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     order:2;
+    width:100%;
+}
+div#content div.post div.post-info h3.pnp{
+    order:4;
     margin:6px;
-    height: 10%;
+    height:10%;
     width:60%;
 }
-div#content div.post p.time-stamp{
-    order:3;
-}
-div#content div.post h5.p-comments{
-    order:4;
-}
-div#content div.post h5.p-likes{
+div#content div.post div.post-info p.time-stamp{
     order:5;
+    font-size: .8em;
+    font-weight: 600;
+    color: grey;
+
+}
+div#content div.post div.post-foot{
+    display:flex;
+    order:3;
+    flex-wrap:wrap;
+    flex-direction: column;
+    width:100%;
+}
+div#content div.post div.post-foot h5.p-comments{
+    order:1;
+}
+div#content div.post div.post-foot h5.p-likes{
+    order:2;
 }
 footer{
     order:3;
