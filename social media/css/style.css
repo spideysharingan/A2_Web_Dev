@@ -4,6 +4,11 @@ html, body, div, h1,h2,h3,h4,h5,h6,nav,ul,ol,li,p{
     margin:0;
     padding: 0;
 }
+background: #8fc800;
+background: -moz-linear-gradient(-45deg, #8fc800 17%, #8fc800 100%);
+background: -webkit-linear-gradient(-45deg, #8fc800 17%,#8fc800 100%);
+background: linear-gradient(135deg, #8fc800 17%,#8fc800 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', endColorstr='#8fc800',GradientType=1 );
 body{
     background-color: beige;
  font-family:fantasy;
@@ -114,7 +119,7 @@ div#content div.post div.post-info p.time-stamp{
     font-size: .8em;
     font-weight: 600;
     color: grey;
-
+ 
 }
 div#content div.post div.post-foot{
     display:flex;
@@ -122,6 +127,7 @@ div#content div.post div.post-foot{
     flex-wrap:wrap;
     flex-direction: column;
     width:100%;
+   
 }
 div#content div.post div.post-foot h5.p-comments{
     order:1;
