@@ -31,7 +31,7 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: cadetblue;
+    background-color: #c6c6c6;
     width:100%;
     height:300px;
 }
@@ -125,7 +125,7 @@ div#content div.post-info{
 div#content div.post h3.pnp{
     order:1;
     margin:6px 0;
-    height:10%;
+    height:15%;
     width:60%;
 }
 div#content div.post p.time-stamp{
@@ -157,17 +157,23 @@ div#content div.post div.post-foot h5.p-likes{
     margin:6px;
 }
 /*comment title h5*/
-div#content div.post div.post-foot div.p-comments .com-pic{
+div#content div.post div.post-foot .com-pic{
     flex: 100;
     order:2;
     border-radius: 100px;
     width:50px;
+}
+div#content div.post div.post-foot p.comment-p{
+    flex:1;
+    flex-wrap:wrap;
+    flex-direction: column;
+    order: 1;
 }
 
 footer{
     order:3;
     width:100%;
     text-align: center;
-    color: #000000;
+    color: #151315;
     margin 12px;
 }
