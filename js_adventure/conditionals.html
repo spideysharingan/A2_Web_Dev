@@ -6,13 +6,62 @@
     </head>
     <body>
         <script>
+         
+            var bread=0;
+            town(1);
+            function town(){
+                    var town = prompt("Welcome to the Town, Stranger: What can I do with you?").toLowerCase();
+            
+                if(town=="inn"){
+                    inn();
+                }
+                else if(town=="baker"){
+                    baker();
+                }
+                else{
+                    town();
+                }
+            function inn(door){
+                var inn = prompt("Welcome to the inn, Stranger: What can I eat you with?");
+                
+            }
+            function baker(){
+                var baker = prompt("ME DA THE CHEF");
+           if(baker == "exit"){
+               town();
+           }
+                else if(baker == "bread"){
+                    alert("Nice cold bread for you");
+                    bread++;
+                }
+            else{
+                alert("YO NO HAVO" + baker);
+                baker();
+            }
+                
+            }
+            }
 //            alert("Hey Listen?");
 //            confirm("Where is the listener?");
 //            prompt("Where is the rat's nest");
+         /*   var favColor = prompt("What is your favorite color").toLowerCase();
+            switch(favColor){
+                    case "blue":
+                    alert("nerds like blue");
+            break;
+                    case "green":
+                    alert("dead people like blue");
+            break;
+                    case "yellow":
+                    alert("sun is not yellow");
+            break;
+            default:
+                alert("FAKE NEWS!");
+            break;
+                           }
+*/
               
-              var favColor = prompt("What is your favorite color").toLowerCase();
-              
-              if(favColor == "red"){
+              /*if(favColor == "red"){
                   alert("my blood is red! this is the supreme color!");
               }
             else if(favColor=="green"){
@@ -27,8 +76,8 @@
             else{
                   alert("you have super bad taste in color! This is the loser color!");
               }
-            
-            alert("Your favotite color is " + favColor);
+            */
+            alert("Your favorite color is " + favColor);
         </script>
     </body>
 
