@@ -10,8 +10,8 @@
                         Start();
                         
                         function Start(){
-                            var playerName = prompt("What is your name traveller?");
-                            alert("welcome to the land of Oz,"+ playerName);
+                            var playerName = prompt("What is your name ninja?");
+                            alert("welcome to the vilage hidden in the eyes,"+ playerName);
                             var beginAdv = confirm("You ready?");
                             if(beginAdv){
                                 Village();
@@ -22,22 +22,22 @@
                         }
             
                         function Village(){
-                            var village =prompt("You arrive at mlucchkin village. There are little people about their business. You see a blacksmith, inn, candyshop, and the yellow brick road").toLowerCase();
+                            var village =prompt("You arrive at the village hidden in the eyes. There are little people about that eats others business. You see a communist leader, motel, food shop, and the black poison road").toLowerCase();
                             
-                            if(village == "blacksmith" || village == "go to blacksmith"){
-                                alert("blacksmith is ignoring you");
+                            if(village == "leader" || village == "communist leader"){
+                                alert("leader sends you to jail");
                                 
                             }
-                        else if(village=="inn" || village=="go to the inn"){
-                            alert("you enter the inn and the innkeepoer asks what you want'What can I do for you? a room,, food, a sit by the hearth fire'");
+                        else if(village=="motel" || village=="go motel"){
+                            alert("you enter the motel and the motelkeeper asks what you want'What can I do for you? a room,, food, a duel'");
                             Village();
                         }
-                        else if(village== "candyshop"){
-                            alert("There is a sign at door saying closed for now be back soon.");
+                        else if(village== "food shop"){
+                            alert("WE are communist bro!");
                             Village();
                         }
-                        else if(village=="yellow brick road"){
-                          YBR();
+                        else if(village=="black poison road"){
+                          BPR();
                         }
                         else{
                             alert("I do not understand"+village);
@@ -45,13 +45,28 @@
                         }
                         }
                         
-                        function YBR(){
-                              var ybr = prompt("you go onto the yellow brick road that goes for miles until you reach the countryside and then you notice a scarcrow beside a corn field").toLowerCase();
+                        function BPR(){
+                              var bpr = prompt("you go onto the Black Poison road that goes for inches until you found the village hidden in the trees and youcan go in or follow Black Poison road").toLowerCase();
                         
-                            if(ybr == "talk" || ybr == "talk with scarecrow"){
-                                alert("the scarecrow got scared goes he heard someone");
+                            if(bpr == "black poison road" || bpr == "follow black poison road"){
+                                alert("the police pop up and they are coming to arrest you");
+                            }
+                                
+                            else if(bpr == "village hidden in the trees" || bpr == "go to the village hidden in the trees"){
+                                alert("You run into ninjas that came to ambush you");
+                            }
+                        else{
+                            alert("I do not understand"+bpr);
+                            BPR();
+                        }
                             
-                                var scarecrow = prompt("he does not notice you you need to yell or throw rocks");
+                       
+                                                
+                                                }
+                            
+                        
+            
+            /*     var scarecrow = prompt("he does not notice you you need to yell or throw rocks");
                                 
                                 switch(scarecrow){
                                     case "yell":
@@ -63,13 +78,8 @@
                                     default:
                                         alert("I DID NOT HEAR YOU");
                                         
-                                        YBR();
-                                                
-                                                }
-                            }
-                        }
-            
-            
+                                        YBR();*/
         </script>>
     </body>
 </html>
+    
