@@ -7,11 +7,32 @@
             <h1>Adventure Game v0.1</h1>
                 <p>By: Micha Crandall</p>
                     <script>
-                        Start();
+                       
                         
+                        var inventory ={
+                            shuriken:100,
+                            MEGAsword:0,
+                            badsword:0,
+                            
+                        }
+                        
+                        var player={
+                            firstname:"",
+                            lastname:"",
+                            age:"",
+                            gender:"",
+                            health:"100",
+                            
+                            
+                            
+                        }
+                         Start();
                         function Start(){
-                            var playerName = prompt("What is your name ninja?");
-                            alert("welcome to the vilage hidden in the eyes,"+ playerName);
+                            player.firstname = prompt("What is your first name ninja?");
+                            player.lastname = prompt("What is your last name ninja?");
+                            player.gender = prompt("What is your gender?");
+                            player.age = prompt("how old are you?");
+                            alert("welcome to the vilage hidden in the eyes, You have 100 shuriken to start off with"+ player.firstname +  player.lastname);
                             var beginAdv = confirm("You ready?");
                             if(beginAdv){
                                 Village();
@@ -19,7 +40,7 @@
                             else{
                                 alert("You lose");
                             }
-                        }
+                        
             
                         function Village(){
                             var village =prompt("You arrive at the village hidden in the eyes. There are little people about that eats others business. You see a communist leader, motel, food shop, and the black poison road").toLowerCase();
@@ -29,7 +50,7 @@
                                 
                             }
                         else if(village=="motel" || village=="go motel"){
-                            alert("you enter the motel and the motelkeeper asks what you want'What can I do for you? a room,, food, a duel'");
+                            alert("you enter the motel and the motelkeeper tells you we are closed");
                             Village();
                         }
                         else if(village== "food shop"){
@@ -59,12 +80,9 @@
                             alert("I do not understand"+bpr);
                             BPR();
                         }
+                        }
                             
-                       
-                                                
-                                                }
-                            
-                        
+                        }
             
             /*     var scarecrow = prompt("he does not notice you you need to yell or throw rocks");
                                 
