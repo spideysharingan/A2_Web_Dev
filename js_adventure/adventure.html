@@ -10,7 +10,7 @@
                        
                         
                         var inventory ={
-                            shuriken:2,
+                            shuriken:1,
                             MEGAsword:0,
                             badsword:0,
                             
@@ -32,7 +32,7 @@
                             player.lastname = prompt("What is your last name ninja?");
                             player.gender = prompt("What is your gender?");
                             player.age = prompt("how old are you?");
-                            alert("welcome to the vilage hidden in the eyes, You have 2 shuriken"+ player.firstname + player.lastname);
+                            alert("welcome to the vilage hidden in the eyes, You have 2 shuriken "+ player.firstname + player.lastname);
                             var beginAdv = confirm("You ready?");
                             if(beginAdv){
                                 Village();
@@ -87,7 +87,7 @@
                              
                              if(ppr == "throw shuriken" || ppr == "throw shuriken at police" && inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
-                            alert("YOU KILLED THE POLICE GUY \n shuriken =" +inventory.shuriken);
+                            PPPR();
                              }
                          else if(ppr == "run" || ppr == "hide"){
                                 alert("You died");
@@ -97,17 +97,38 @@
                                   alert("you died");
                                  }
                             }
+                            //something
+                            function PPPR(){
+                                var pppr = prompt("YOU KILLED THE POLICE GUY. Another police guy shows up you need to act. \n shuriken =" +inventory.shuriken).toLowerCase()
+                                
+                           if(pppr == "impersonate being a police" || pppr == "prentend to be police guy"){
+                                alert("YOU LIVED YOU WON");
+                            }
+                            else if(pppr == "hide" || pppr == "run"){
+                                alert("you died");
+                            }
+                             else{
+                                 alert("you died");
+                             }
+                            }
+                            
                         //the ambush
                         function VPR(){
-                            var vpr = prompt("some ninjas are coming to attack you.  You need to act now.")
+                            var vpr = prompt("some ninjas are running towards your direction.  You need to act now.").toLowerCase()
                             
-                            if(vpr == "throw shuriken" || ppr == "throw shuriken at ninjas" && inventory.shuriken == 1){
-                            inventory.shuriken = inventory.shuriken - 2;
+                            if(vpr == "throw shuriken" || vpr == "throw shuriken at ninjas" && inventory.shuriken == 1){
+                            inventory.shuriken = inventory.shuriken - 1;
                             alert("YOU KILLED THE NINJAS \n shuriken =" +inventory.shuriken);
                              }
-                            
+                             else if(vpr == "hide" || vpr == "run"){
+                                 alert("the ninjas did not notice you");
+                             }
+                            else{
+                                alert("you died");
+                            }
                             
                         }
+                            
                         
                         
                         
