@@ -32,7 +32,7 @@
                             player.lastname = prompt("What is your last name ninja?");
                             player.gender = prompt("What is your gender?");
                             player.age = prompt("how old are you?");
-                            alert("welcome to the vilage hidden in the eyes, You have 2 shuriken "+ player.firstname + player.lastname);
+                            alert("welcome to the vilage hidden in the eyes, You have 1 shuriken "+ player.firstname + player.lastname);
                             var beginAdv = confirm("You ready?");
                             if(beginAdv){
                                 Village();
@@ -101,7 +101,7 @@
                             function PPPR(){
                                 var pppr = prompt("YOU KILLED THE POLICE GUY. Another police guy shows up you need to act. \n shuriken =" +inventory.shuriken).toLowerCase()
                                 
-                           if(pppr == "impersonate being a police" || pppr == "prentend to be police guy"){
+                           if(pppr == "impersonate being a police" || pppr == "pretend to be police guy"){
                                 alert("YOU LIVED YOU WON");
                             }
                             else if(pppr == "hide" || pppr == "run"){
@@ -114,14 +114,14 @@
                             
                         //the ambush
                         function VPR(){
-                            var vpr = prompt("some ninjas are running towards your direction.  You need to act now.").toLowerCase()
+                            var vpr = prompt("some ninjas are running towards your direction.  You need to act now.").toLowerCase
                             
                             if(vpr == "throw shuriken" || vpr == "throw shuriken at ninjas" && inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
-                            alert("YOU KILLED THE NINJAS \n shuriken =" +inventory.shuriken);
+                            LPR();
                              }
                              else if(vpr == "hide" || vpr == "run"){
-                                 alert("the ninjas did not notice you");
+                                 HPR();
                              }
                             else{
                                 alert("you died");
@@ -129,7 +129,39 @@
                             
                         }
                             
-                        
+                            //hideing
+                            function HPR(){
+                            var hpr = prompt("the ninjas did not notice you. ten minutes later a police guy shows up. You need to act now").toLowerCase
+                             
+                            if(hpr =="throw shuriken" || hpr == "throw shuriken at police guy" && inventory.shuriken == 1){
+                            inventory.shuriken = inventory.shuriken - 1;
+                            alert("YOU KILLED THE police guy. YOU won! \n shuriken =" +inventory.shuriken);
+                             } 
+                                else if(hpr == "hide" || hpr == "run"){
+                                 alert("you died");                       
+                                }
+                                    else{
+                                alert("you died");
+                                
+                            }    
+                            }
+                        //the ninjas
+                            
+                            function LPR(){
+                                var lpr = prompt("YOU KILLED THE NINJAS. A police guy shows up. You need to act now. \n shuriken =" +inventory.shuriken).ToLowerCase
+                                
+                                if(lpr =="throw shuriken" || lpr == "throw shuriken at police guy"){
+                                    alert("You have no shuriken you die");
+                                }
+                                 else if(lpr == "play dead" || lpr == "pretend to be dead"){
+                                    alert("you fooled the police guy. YOU WON");
+                                 }
+                                      else{
+                                alert("you died");
+                                
+                            } 
+                                
+                                }
                         
                         
                         
