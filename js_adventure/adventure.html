@@ -32,7 +32,7 @@
                             player.lastname = prompt("What is your last name ninja?");
                             player.gender = prompt("What is your gender?");
                             player.age = prompt("how old are you?");
-                            alert("welcome to the vilage hidden in the eyes, You have 1 shuriken "+ player.firstname + player.lastname);
+                            alert("welcome to the vilage hidden in the eyes, You have 1 shuriken. Remember puking is the best cure. "+ player.firstname +"\n"+ player.lastname);
                             var beginAdv = confirm("You ready?");
                             if(beginAdv){
                                 Village();
@@ -61,36 +61,36 @@
                           BPR();
                         }
                         else{
-                            alert("I do not understand"+village);
+                            alert("I do not understand \n"+village);
                             Village();
                         }
                         }
                         
                         function BPR(){
-                              var bpr = prompt("you go onto the Black Poison road that goes for inches until you found the village hidden in the trees and you can go in or follow Black Poison road").toLowerCase();
+                              var bpr = prompt("you go onto the Black Poison road that goes for inches until you found the pathway to the village hidden in the trees of maple syrup and you can go in or follow Black Poison Road").toLowerCase();
                         
                             if(bpr == "black poison road" || bpr == "follow black poison road"){
                                 PPR();
                             }
                                 
-                            else if(bpr == "village hidden in the trees" || bpr == "go to the village hidden in the trees"){
+                            else if(bpr == "village hidden in the trees of maple syrup" || bpr == "go to the village hidden in the trees of maple syrup"){
                                VPR();
                             }
                         else{
-                            alert("I do not understand"+bpr);
+                            alert("I do not understand \n"+bpr);
                             BPR();
                         }
                         }
                          //Police chase
                             function PPR(){
-                             var ppr = prompt("one police guy pop up and they are coming to arrest you. You need to act now!").toLowerCase()
+                             var ppr = prompt("one police guy pop up and they are coming to arrest you. You need to act now(mispell you die)!").toLowerCase()
                              
-                             if(ppr == "throw shuriken" || ppr == "throw shuriken at police" && inventory.shuriken == 1){
+                             if(ppr == "throw shuriken" || ppr == "throw shuriken at police" || ppr == "attack" || ppr == "attack the police guy"&& inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
                             PPPR();
                              }
                          else if(ppr == "run" || ppr == "hide"){
-                                alert("You died");
+                                alert("You died.  There is no running from the police");
                              }
                         
                         else{
@@ -99,22 +99,25 @@
                             }
                             //something
                             function PPPR(){
-                                var pppr = prompt("YOU KILLED THE POLICE GUY. Another police guy shows up you need to act. \n shuriken =" +inventory.shuriken).toLowerCase()
+                                var pppr = prompt("YOU KILLED THE POLICE GUY. Another police guy shows up. You need to act now(mispell you die). \n shuriken =" +inventory.shuriken).toLowerCase()
                                 
                            if(pppr == "impersonate being a police" || pppr == "pretend to be police guy"){
-                                alert("YOU LIVED YOU WON");
+                                
+                               TPR();
                             }
                             else if(pppr == "hide" || pppr == "run"){
                                 alert("you died");
                             }
-                             else{
+                             else if(lpr =="throw shuriken" || lpr == "throw shuriken at police guy"){
+                                    alert("You have no shuriken you die");}
+                                else{
                                  alert("you died");
                              }
                             }
                             
                         //the ambush
                         function VPR(){
-                            var vpr = prompt("some ninjas are running towards your direction.  You need to act now.").toLowerCase()
+                            var vpr = prompt("some ninjas are running towards your direction.  You need to act now(mispell you die).").toLowerCase()
                             
                             if(vpr == "throw shuriken" || vpr == "throw shuriken at ninjas" && inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
@@ -131,14 +134,15 @@
                             
                             //hideing
                             function HPR(){
-                            var hpr = prompt("the ninjas did not notice you. ten minutes later a police guy shows up. You need to act now").toLowerCase()
+                            var hpr = prompt("the ninjas did not notice you. ten minutes later a police guy shows up. You need to act now(mispell you die).").toLowerCase()
                              
-                            if(hpr =="throw shuriken" || hpr == "throw shuriken at police guy" && inventory.shuriken == 1){
+                            if(hpr =="throw shuriken" || hpr == "throw shuriken at police guy" || hpr == "attack" || hpr == "attack police guy" && inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
-                            alert("YOU KILLED THE police guy. YOU won! \n shuriken =" +inventory.shuriken);
-                             } 
+                            alert("You finished THE police guy. \n shuriken =" +inventory.shuriken);
+                             EPR();
+                            } 
                                 else if(hpr == "hide" || hpr == "run"){
-                                 alert("you died");                       
+                                 alert("you died. There is no running from the police");                       
                                 }
                                     else{
                                 alert("you died");
@@ -147,27 +151,43 @@
                             }
                         //the ninjas
                                                       function LPR(){
-                                var lpr = prompt("YOU KILLED THE NINJAS. A police guy shows up. You need to act now. \n shuriken =" +inventory.shuriken).ToLowerCase
-                                 if(lpr == "play dead" || lpr == "pretend to be dead"){
-                                    alert("you fooled the police guy. YOU WON");
+                                var lpr = prompt("You finished the ninja. A police guy shows up. You need to act now(mispell you die). \n shuriken =" +inventory.shuriken).ToLowerCase
+                                 if(lpr == "play dead" || lpr == "pretend to be dead"|| lpr == "sleep"  || lpr == "lay down on the ground"){
+                                    alert("you fooled the police guy.");
+                                EBR();
                                  }
-                               
+                                  else if(hpr == "hide" || hpr == "run"){
+                                 alert("you died. There is no running from the police"); 
+                                  }
                                 else if(lpr =="throw shuriken" || lpr == "throw shuriken at police guy"){
                                     alert("You have no shuriken you die");
                                 }
                                  
                                       else{
                                 alert("you died");
-                                
-                                          
                             } 
+                            }
+                          function tpr(){
+                                var tpr = prompt("You got away from the police guy. 1 day later,You have finally made it to the end of the black poison road. You just realized that you have been poisoned. You have one more choice to decide your fate. You need to act now(you misspell you die).").ToLowerCase()
                                 
+                                if(tpr == "puke" || tpr =="puke out poisoning"){
+                                alert("the puke saved you you win!");    
                                 }
-                          
-
-                        
-                        
-                        
+                              else{
+                                  alert("you died.")
+                                  
+                              }
+                          }
+                        function EBR(){
+                            var ebr = prompt("You finally made it to the village hidden in the trees of maple syrup, but now you are lost in the trees. You are going to die of starvation unless you eat from your surrondings. You need to act now(you mispell you die)").ToLowerCase()   
+                        }
+                        if(ebr == "eat maple syrup"|| ebr =="make maple syrup and eat the maple syrup"|| ebr == "cut open trees and eat the maple syrup"){
+                            alert("the maple syrup saved you. You win.");
+                        }
+                        else{
+                            alert("you died.")
+                        }
+                
                         
                         
                         
