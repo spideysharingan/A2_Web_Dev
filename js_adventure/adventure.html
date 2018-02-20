@@ -4,7 +4,7 @@
         <title>Adventure game</title>
     </head>
         <body>
-            <h1>Adventure Game v0.1</h1>
+            <h1>Mispell you die v0.1</h1>
                 <p>By: Micha Crandall</p>
                     <script>
                        
@@ -50,11 +50,11 @@
                                 
                             }
                         else if(village=="motel" || village=="go motel"){
-                            alert("you enter the motel and the motelkeeper tells you we are closed");
+                            alert("you enter the motel and the motelkeeper tells you we are closed, but if you ever need to get away from the police and there is a dead police around just pretend to be a police guy");
                             Village();
                         }
                         else if(village== "food shop"){
-                            alert("WE are communist bro!");
+                            alert("WE are communist bro! I will give you a tip though, you can get away from the police if you are near dead ninjas by playing dead");
                             Village();
                         }
                         else if(village=="black poison road"){
@@ -83,7 +83,7 @@
                         }
                          //Police chase
                             function PPR(){
-                             var ppr = prompt("one police guy pop up and they are coming to arrest you. You need to act now(mispell you die)!").toLowerCase()
+                             var ppr = prompt("one police guy pop up and they are coming to arrest you. You need to act now(mispell you die)!").toLowerCase();
                              
                              if(ppr == "throw shuriken" || ppr == "throw shuriken at police" || ppr == "attack" || ppr == "attack the police guy"&& inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
@@ -99,7 +99,7 @@
                             }
                             //something
                             function PPPR(){
-                                var pppr = prompt("YOU KILLED THE POLICE GUY. Another police guy shows up. You need to act now(mispell you die). \n shuriken =" +inventory.shuriken).toLowerCase()
+                                var pppr = prompt("YOU KILLED THE POLICE GUY. Another police guy shows up. You need to act now(mispell you die). \n shuriken =" +inventory.shuriken).toLowerCase();
                                 
                            if(pppr == "impersonate being a police" || pppr == "pretend to be police guy"){
                                 
@@ -117,9 +117,9 @@
                             
                         //the ambush
                         function VPR(){
-                            var vpr = prompt("some ninjas are running towards your direction.  You need to act now(mispell you die).").toLowerCase()
+                            var vpr = prompt("some ninjas are running towards your direction.  You need to act now(mispell you die).").toLowerCase();
                             
-                            if(vpr == "throw shuriken" || vpr == "throw shuriken at ninjas" && inventory.shuriken == 1){
+                            if(vpr == "throw shuriken" || vpr == "throw shuriken at ninjas" || vpr == "attack" || vpr == "attack the ninjas" && inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
                             LPR();
                              }
@@ -134,12 +134,12 @@
                             
                             //hideing
                             function HPR(){
-                            var hpr = prompt("the ninjas did not notice you. ten minutes later a police guy shows up. You need to act now(mispell you die).").toLowerCase()
+                            var hpr = prompt("the ninjas did not notice you. ten minutes later a police guy shows up. You need to act now(mispell you die).").toLowerCase();
                              
                             if(hpr =="throw shuriken" || hpr == "throw shuriken at police guy" || hpr == "attack" || hpr == "attack police guy" && inventory.shuriken == 1){
                             inventory.shuriken = inventory.shuriken - 1;
                             alert("You finished THE police guy. \n shuriken =" +inventory.shuriken);
-                             EPR();
+                             EBR();
                             } 
                                 else if(hpr == "hide" || hpr == "run"){
                                  alert("you died. There is no running from the police");                       
@@ -151,12 +151,12 @@
                             }
                         //the ninjas
                                                       function LPR(){
-                                var lpr = prompt("You finished the ninja. A police guy shows up. You need to act now(mispell you die). \n shuriken =" +inventory.shuriken).ToLowerCase
+                                var lpr = prompt("You finished the ninja. A police guy shows up. You need to act now(mispell you die). \n shuriken =" +inventory.shuriken).toLowerCase();
                                  if(lpr == "play dead" || lpr == "pretend to be dead"|| lpr == "sleep"  || lpr == "lay down on the ground"){
                                     alert("you fooled the police guy.");
                                 EBR();
                                  }
-                                  else if(hpr == "hide" || hpr == "run"){
+                                  else if(lpr == "hide" || lpr == "run"){
                                  alert("you died. There is no running from the police"); 
                                   }
                                 else if(lpr =="throw shuriken" || lpr == "throw shuriken at police guy"){
@@ -167,8 +167,8 @@
                                 alert("you died");
                             } 
                             }
-                          function tpr(){
-                                var tpr = prompt("You got away from the police guy. 1 day later,You have finally made it to the end of the black poison road. You just realized that you have been poisoned. You have one more choice to decide your fate. You need to act now(you misspell you die).").ToLowerCase()
+                          function TPR(){
+                                var tpr = prompt("You got away from the police guy. 1 day later,You have finally made it to the end of the black poison road. You just realized that you have been poisoned. You have one more choice to decide your fate. You need to act now(you misspell you die).").toLowerCase();
                                 
                                 if(tpr == "puke" || tpr =="puke out poisoning"){
                                 alert("the puke saved you you win!");    
@@ -179,16 +179,16 @@
                               }
                           }
                         function EBR(){
-                            var ebr = prompt("You finally made it to the village hidden in the trees of maple syrup, but now you are lost in the trees. You are going to die of starvation unless you eat from your surrondings. You need to act now(you mispell you die)").ToLowerCase()   
-                        }
-                        if(ebr == "eat maple syrup"|| ebr =="make maple syrup and eat the maple syrup"|| ebr == "cut open trees and eat the maple syrup"){
+                            var ebr = prompt("You finally made it to the village hidden in the trees of maple syrup, but now you are lost in the trees. You are going to die of starvation unless you eat from your surrondings. You need to act now(you mispell you die).").toLowerCase(); 
+                        
+                        if(ebr == "eat maple syrup" || ebr =="make maple syrup and eat the maple syrup" || ebr == "cut open trees and eat the maple syrup"){
                             alert("the maple syrup saved you. You win.");
                         }
                         else{
                             alert("you died.")
                         }
                 
-                        
+                        }
                         
                         
                         
