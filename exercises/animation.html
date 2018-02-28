@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <header>
-   <link href="style.css"rel="stylesheet" type="text/css">
-    </header>
-    <body>
-        
-    <h1>My very first javascript animation</h1>
-        <div id ="container">
-        <div id="animation"> THis is my animation</div>
-        </div>
-    <script>
-        var id = setInterval(frame, 5)
-        
-        function frame()  {
-            if(){
-               vlearInterval(id);
-               } else{
-                   
-               }
-        }
-        function myMove()  {
-        var elem+ document.getElementById("animate");
-        var pos = 0;
-        var id = setInterval(frame, 5);
-        function frame() {
-            if (pos == 350){
-            clearInterval(id);
-        }else{
-        pos++;
-        elem.style.top = pos +'px';
-        elem.sytle.left = pos+'px';    
-        }    
-        }
-        }
-        </script>
-    </body>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: blue;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: green;
+}
+</style>
+<body>
+
+<p>
+<button onclick="myMove()">Click Me</button>
+</p> 
+
+<div id ="container">
+<div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+</script>
+
+</body>
 </html>
