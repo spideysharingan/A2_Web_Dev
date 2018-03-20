@@ -136,3 +136,50 @@ flex-direction: column;
     flex-direction: column;
     grid-column:3/4
 }
+
+.btn {
+    margin-right: 5px;
+    border: 1px solid #000;
+    border-radius:50px;
+    background-color: transparent;
+    color: rgba(0,0,0, 0.87);
+    width: 96px;
+    height: 48px;
+    outline: none;
+    color: #000;
+    transition: all .4s ease-out;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: white;
+    transition: all .4s ease-out;
+}
+.btn:active{
+    outline: none;
+}
+.btn2{
+    margin-right:10px;
+    border: 1px solid #234324;
+    border-radius:50px;
+    background-color:bisque;
+    color: aliceblue;
+    width: 96px;
+    height: 48px;
+    outline:none;
+    color: #234324;
+    transition: all .4s ease-out;
+    float:right;
+}
+.btn2:hover{
+    background-color: #234324;
+    color: bisque;
+    transition: all .4s ease-out;
+}
+.btn:active{
+    outline:none;
+}
+.red500{background-color: #F22485}
+.redred500{background-color: #F55555}
+.red500{background-color: #000000}
+.red500{background-color: #17cc48}
