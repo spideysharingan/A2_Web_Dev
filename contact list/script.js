@@ -6,7 +6,7 @@ var preview = document.getElementById("preview");
 
 function Preview() {
     
-    color = document.querySelector('inputo[name="colors"]:checked').value;
+    color = document.querySelector('input[name="colors"]:checked').value;
     
     console.log("The color is " + color);
     
@@ -34,7 +34,7 @@ window.onclick = function(event){
         modal.style.visibility = "hidden";
         modal.style.opacity = "0";
         preview.style.background = "#1a1a1a";
-        document.querySelector('input[name="colors"]:checked').checked= false;
+        document.querySelector('input[name="colors"]:checked').checked = false;
     }
     
 }
