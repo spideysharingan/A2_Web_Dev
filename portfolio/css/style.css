@@ -1,5 +1,25 @@
 
+    /*font-family: 'Forum', cursive;
+    font-family: 'Yantramanav', sans-serif;*/
+Body{
+    background-color: #CC3C0A
+}
+div#container{
+  background-color: #FF263D;
+}
+header{
+    background-color: #71FF65;
+}
+header h1{
+   text-align: center
+}
+nav {
+    background-color:#994426;
+    width:100%;
+    clear: both;
+    margin:0;
     font-family: 'Forum', cursive;
-    font-family: 'Yantramanav', sans-serif;
-
-
+}
+footer{
+    background-color: #5CCC0A;
+}
