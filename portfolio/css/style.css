@@ -1,6 +1,33 @@
 
     /*font-family: 'Forum', cursive;
     font-family: 'Yantramanav', sans-serif;*/
+@media only screen and(orientation:landscape){
+    
+}
+@media only screen and(orientation:portrait){
+    
+}
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (min-width: 600px){
+
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 992px){
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+
 Body{
     background-color: #CC3C0A
 }
@@ -14,12 +41,30 @@ header h1{
    text-align: center
 }
 nav {
-    background-color:#994426;
-    width:100%;
-    clear: both;
-    margin:0;
-    font-family: 'Forum', cursive;
-}
-footer{
     background-color: #5CCC0A;
+     overflow: hidden;
+}
+nav a {
+    float: left;
+    display:block;
+    color: ##FF263D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: antiquewhite;
+    color:aqua;
+}
+active{
+  background-color:#994426;
+color: aliceblue
+}
+nav .icon{
+    display: none;
+}
+
+footer{
+   background-color:#994426;
 }
