@@ -8,29 +8,43 @@
     
 }
 @media only screen and (max-width: 600px){
-
+    body{
+    background-color: red;
+    }
+    nav a(:first-child){display: none;}
+    nav a.icon {
+        float:right;
+        display: block;
+    }
+@media screen
 }
+
 
 @media only screen and (min-width: 600px){
-
+    body{
+    background-color: orange;
+    }
 }
-
+/*
 @media only screen and (min-width: 768px){
-
+    Body{
+        background-color: purple;}
 }
 
 @media only screen and (min-width: 992px){
-
+    Body{
+    background-color: green;
+    }
 }
 
 @media only screen and (min-width: 1200px){
-
+    Body{
+    background-color:grey;}
 }
+*/
 
 
-Body{
-    background-color: #CC3C0A
-}
+
 div#container{
   background-color: #FF263D;
 }
@@ -64,7 +78,13 @@ color: aliceblue
 nav .icon{
     display: none;
 }
-
+/*front page image*/
+img#pom{
+    margin 15px;
+    float: left;
+    max-width: 100%;
+    height: auto;
+}
 footer{
    background-color:#994426;
 }
