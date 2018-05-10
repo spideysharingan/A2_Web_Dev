@@ -8,6 +8,7 @@
 }
 @media only screen and (max-width: 600px){
    body{
+       font-family: 'Forum', cursive;
   background-color: #33af46;
 }
 header{
@@ -113,6 +114,7 @@ figcaption{
 
 @media only screen and (min-width: 600px){
    body{
+       font-family: 'Forum', cursive;
   background-color: #33af46;
 }
 header{
@@ -152,51 +154,14 @@ header h1{
     nav li a{
         border-right: 1px solid #576979;
     }
-    nav li a hover{
-        background-color: bisque;
+    nav li a:hover{
+        background-color: #cb7a61;
     }
     active{
-        background-color:aquamarine;
+        background-color:#026242;
     }
-/*nav {
-    width: 100%;
-    margin:0;
-   display: flex;
-    background-color: #5CCC0A;
-     overflow: hidden;
- flex-direction: row;
-    clear: both;
-}
-nav ul {
-    list-style: none
- 
-    
-}
-    nav ul li{
-        
-    }
-    nav ul li a{
-        display: block;
-            color: #FF263D;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    }
-nav ul li a:hover{
-    background-color: antiquewhite;
-    color:aqua;
-}
-active{
-  background-color:#994426;
-color: aliceblue
-}
-nav .icon{
-    display: none;
-} 
-    */
-/*front page image*/
+
+
     row{
         display: flex;
       flex-wrap: wrap;
@@ -206,11 +171,13 @@ nav .icon{
     background-color: aliceblue;
         padding: 20px
     }
-    
+    /*front page image*/
     img#pom{
-   justify-content: center;
+  
+        display: block;
+        align-content: center;
     padding:20px;
-  align-items: baseline;
+ 
     }
    
 }
