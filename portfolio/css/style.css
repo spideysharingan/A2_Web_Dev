@@ -1,19 +1,14 @@
 /*font-family: 'Forum', cursive;
     font-family: 'Yantramanav', sans-serif;*/
-@media only screen and(orientation:landscape){
-    
-}
-@media only screen and(orientation:portrait){
-    
-}
+
 @media only screen and (max-width: 600px){
    body{
        font-family: 'Forum', cursive;
-  background-color: #33af46;
+  background-color: #FFE9BE;
 }
 header{
     padding: 60px;
-    background-color: #71FF65;
+    background-color: #82AAFF;
 }
 header h1{
    text-align: center
@@ -21,18 +16,19 @@ header h1{
    nav {
    height: auto;
     width:100%;
-    background-color: aqua;
+    
     position: relative;
     border-bottom: 2px solid #283744;
     }
     nav ul{
        display: block;
         padding:0;
-        margin 0;
+        /*margin 0;*/
         width: 100%;
         height: auto;
     }
     nav li{
+           background-color:#9CA3B2 ;
         width:100%;
         display: inline;
         float: left;
@@ -75,10 +71,10 @@ header h1{
   align-items: baseline;
     }
    
-}
+
 footer{
  padding:20px;
-    background-color:#994426;
+    background-color:#FFD574;
 text-align: center;
 }
    
@@ -92,8 +88,8 @@ div#gallery{
 
 figure{
     width: 200px;
-    background-color: chartreuse;
-    flex: 0 30 30;
+    background-color: #B29040;
+    /*flex: 0 30 30;*/
     height: auto;
     border: 15px red;
 }
@@ -107,19 +103,44 @@ figcaption{
     padding-bottom: 10px;
 }
 
-
-
-
-
+#h2-contact{
+    float:left;
+    margin-left:10px;
+    width:100%;
+    clear:both;
+    margin-top:30px;
+}
+#h2-form{
+    margin-top:10px;
+    margin-left:10px;
+}
+form input{
+    
+    margin-bottom:10px; 
+}
+button#button-contact{
+    width:100px;
+    height:40px;
+    font-weight: 500;
+    margin-bottom:15px;
+    box-shadow: 1px 1px 5px #820302;
+}
+#contactform{
+    margin-top: 160px;
+}
+#skill1{
+   margin-top: 140px;
+}
+}
 
 @media only screen and (min-width: 600px){
    body{
        font-family: 'Forum', cursive;
-  background-color: #33af46;
+  background-color: #FFE9BE;
 }
 header{
     padding: 60px;
-    background-color: #71FF65;
+    background-color: #82AAFF;
 }
 header h1{
    text-align: center
@@ -127,13 +148,13 @@ header h1{
     nav {
    height: 40px;
     width:100%;
-    background-color: aqua;
+    background-color: #9CA3B2;
     position: relative;
     border-bottom: 2px solid #283744;
     }
     nav ul{
         padding:0;
-        margin 0;
+        /*margin 0;*/
         width: 600px;
         height: 40px;
     }
@@ -180,10 +201,10 @@ header h1{
  
     }
    
-}
+
 footer{
  padding:20px;
-    background-color:#994426;
+    background-color:#FFD574;
 text-align: center;
 }
    
@@ -197,8 +218,8 @@ div#gallery{
 
 figure{
     width: 200px;
-    background-color: chartreuse;
-    flex: 0 30 30;
+    background-color: #B29040;
+    /*flex: 0 30 30;*/
     height: auto;
     border: 15px red;
 }
@@ -220,6 +241,7 @@ figcaption{
     margin-top:30px;
 }
 #h2-form{
+    
     margin-left:10px;
 }
 form input{
@@ -231,4 +253,8 @@ button#button-contact{
     font-weight: 500;
     margin-bottom:15px;
     box-shadow: 1px 1px 5px #820302;
-    
+}
+#contactform{
+    margin-top: 0px;
+}
+}
